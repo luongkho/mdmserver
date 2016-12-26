@@ -1,0 +1,25 @@
+<Replace>
+    <CmdID>3</CmdID> 
+    <Item> 
+        <Target> 
+            <LocURI>./vendor/MSFT/DMClient/Provider/MDMSERVER/Push/PFN</LocURI> 
+        </Target> 
+        <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+        </Meta>
+        <Data>SyncBody_Push_PFN_Data</Data>
+    </Item> 
+</Replace>
+<Get> 
+    <CmdID>CommandUUID</CmdID> 
+    <Item> 
+        <Target> 
+            <LocURI>./vendor/MSFT/DMClient/Provider/MDMSERVER/Push/ChannelURI</LocURI> 
+        </Target> 
+    </Item> 
+    <Item> 
+        <Target> 
+            <LocURI>./vendor/MSFT/DMClient/Provider/MDMSERVER/Push/Status</LocURI> 
+        </Target> 
+    </Item> 
+</Get>

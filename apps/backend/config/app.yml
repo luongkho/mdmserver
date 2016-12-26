@@ -1,0 +1,110 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  mail:
+    from:
+      email: mcenteradmin@gmail.com
+      name: "Support Team"
+  error:
+    unlock:
+      sendEmailFail: "2010"
+      passcodeNotExist: "2011"
+    common:
+      invalidFormat: "1002"
+      deviceUnenrolled: "1003"
+  inventory:
+      group:
+        device: "Device"
+  command:
+    error:
+      3001: "Device is unenrrolled"
+      2010: "Failed to send mail to user"
+      2011: "Passcode does not exist"
+      2001: "Failed to push notification"
+      1001: "System error or unknown error"
+      1002: "Invalid message format"
+      1003: "Device is unenrrolled"
+      1010: "Un-enroll"
+      1011: "Failed to enroll"    
+  command_url:
+    data:
+      send: /mdm/command/send
+      proxy: http://donkey.cybersoft.vn:8080
+  push_notification:
+    ios:
+      dir: /certificate/naml_cer.pem
+    iosapp:
+      dir: /certificate/push_notification.pem
+  payload_identifier:
+      data:
+        0: "com.mdm-server.profile"
+        1: "com.wifi.profile"
+        2: "com.passcode.profile"
+        3: "com.location.profile"
+  passcode_policy_payload:
+      data:
+        pc_simple_value: allowSimple
+        pc_alphanum: requireAlphanumeric
+        pc_min_length: minLength
+        pc_min_complex_char: minComplexChars
+        pc_age: maxPINAgeInDays
+        pc_auto_lock: maxInactivity
+        pc_history: pinHistory
+        pc_period_device_lock: maxGracePeriod
+        pc_num_failed: maxFailedAttempts
+  enroll_app_url:
+    data:
+      1: /application/DeviceLinkup_MDM.apk 
+      2: /application/DeviceLinkup_MDM.mobileconfig
+      3: /application/DeviceLinkup_MDM.plist  
+  enroll_statuses:
+    data:
+      0: "Enrolled"
+      1: "Unenrolled"
+      2: "Allow re-enroll"    
+  
+  command_request_type:
+    data:
+      default: 00
+      ios:     10
+      iosapp:  11
+      android: 21
+      wp:      30
+      wpapp:   31
+  command_request_server_add:
+    data:
+      mdm: "MDM"
+      app: "MobileContainer"
+  location_profile:
+    data:
+      3 : "Location"
+  email_template:
+    data:
+      1: "enroll_android"
+      2: "unlock_android"
+      3: "unlock_ios"
+      4: "enroll_wp"
+      5: "unlock_wp"
+      6: "enroll_ios"
+      
+  windows_phone_enroll_url:
+    data:
+      PolicyUrl: "checkin"
+      ServiceUrl: "checkin"
+      AppAddress: "server"
+        
+  windows_phone_author:
+    data:
+      #Used for GCS AppID:
+        packaged: "ms-app://s-1-15-2-1715216123-2447560608-2649272674-3366273367-2151876629-2401625637-2124608126"
+        secret: "ZJ/+QmjHJaG4HZKyDAmWl7nV/8t+YqJn"
+        pfn: "GlobalCyberSoftVNJSC.35394596037C4_0a2gq8kvkyff0"        
+
+#      #Used for Haitech AppID:
+#        packaged: "ms-app://s-1-15-2-1914677856-725321169-3294544999-2322860606-1429214281-118677821-2268985823"
+#        secret: "3P2nycwoWqUm1PK4Phfyb5v2FZcK9RYD"
+#        pfn: "2210HAITECH.DeviceLP_4def1yyhqpdb0"
+#          
+      

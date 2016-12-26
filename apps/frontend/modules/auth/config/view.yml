@@ -1,0 +1,10 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  stylesheets:    [font-awesome.min.css, simple-line-icons.min.css,bootstrap.min.css,uniform.default.css,light-grey.css]
+
+  javascripts:    [analytics.js, jquery.min.js, jquery-migrate.min.js, bootstrap.min.js, jquery.blockui.min.js,jquery.uniform.min.js,jquery.cokie.min.js]
+
+  has_layout:     true
+  layout:         master

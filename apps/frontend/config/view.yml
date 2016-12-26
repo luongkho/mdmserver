@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        iWebGate
+    description:  iWebGate Server
+    keywords:     iWebGate
+    language:     en
+    robots:       index, follow
+
+  stylesheets:    [font-awesome.min.css, simple-line-icons.min.css,bootstrap.min.css,uniform.default.css,bootstrap-switch.min.css,tasks.css,components.css,plugins.css,layout.css,light-grey.css,custom.css,bootstrap-select.min.css,bootstrap-dialog.css,daterangepicker-bs3.css,lib/datatables/css/dataTables.bootstrap.css,main_page.css,select2.css,multi-select.css,ytLoad.jquery.css]
+
+  javascripts:    [analytics.js, jquery.min.js, jquery-migrate.min.js, bootstrap.min.js, jquery.blockui.min.js,jquery.uniform.min.js,jquery.cokie.min.js,jquery.slimscroll.min.js,jquery.flot.min.js,jquery.flot.resize.min.js,jquery.flot.categories.min.js,jquery.pulsate.min.js,metronic.js,layout.js,quick-sidebar.js,jquery.easypiechart.min.js,tasks.js,bootstrap-select.min.js,bootstrap-dialog.js,jquery.multi-select.js,lib/datatables/js/jquery.dataTables.min.js,lib/datatables/js/dataTables.bootstrap.js,select2.min.js,jquery.transit.js,ytLoad.jquery.js,moment.min.js,common.js]
+
+  has_layout:     true
+  layout:         layout

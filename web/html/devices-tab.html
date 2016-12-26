@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Devices</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/uniform.default.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+    <link href="../css/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
+
+
+    <!-- END PAGE LEVEL PLUGIN STYLES -->
+    <!-- BEGIN PAGE STYLES -->
+    <link href="../css/tasks.css" rel="stylesheet" type="text/css">
+    <!-- END PAGE STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="../css/components.css" id="style_components" rel="stylesheet" type="text/css">
+    <link href="../css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="../css/layout.css" rel="stylesheet" type="text/css">
+    <link href="../css/light-grey.css" rel="stylesheet" type="text/css" id="style_color">
+    <link href="../css/custom.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="lib/datatables/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="../css/main_page.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- END THEME STYLES -->
+
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices -->
+<!-- DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default -->
+<!-- DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle -->
+<!-- DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-fixed" class to have fixed sidebar -->
+<!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
+<!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
+<!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
+
+<body class="page-header-fixed page-quick-sidebar-over-content page-sidebar-closed-hide-logo page-container-bg-solid page-quick-sidebar-open">
+    <!-- BEGIN HEADER -->
+    <div class="page-header navbar navbar-fixed-top">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="#">
+                    <img src="/img/logo.png" alt="logo" class="logo-default">
+                </a>
+            </div>
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+
+                    <li class="dropdown dropdown-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <img alt="" class="img-circle" src="/img/avatar3_small.jpg">
+                            <span class="username username-hide-on-mobile">anhnt_uit_is@yahoo.com </span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-user"></i> My Profile </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-key"></i> Log Out </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <!-- <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+            </a> -->
+            <!-- END RESPONSIVE MENU TOGGLER -->
+        </div>
+        <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+    <div class="clearfix">
+    </div>
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar-wrapper">
+            <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+            <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+            <div class="page-sidebar navbar-collapse collapse">
+                <!-- BEGIN SIDEBAR MENU -->
+                <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                    <li class="heading">
+                        <h3 class="uppercase menu-title">MY STUFF</h3>
+                    </li>
+                    <li>
+                        <a href="enroll-device.html">
+                            <span class="title">Enroll Devices</span>
+                        </a>
+                        <!-- <ul class="sub-menu" style="display: none;">
+                            <li class="active">
+                                <a href="#">Default Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">New Dashboard #1</a>
+                            </li>
+                            <li>
+                                <a href="#">ew Dashboard #2</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="heading">
+                        <h3 class="uppercase menu-title">MOBILE MANAGEMENT</h3>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <span class="title">Enrollment</span>
+                        </a>
+                    </li>
+                    <li class="start active">
+                        <a href="javascript:;">
+                            <span class="title">Devices</span>
+                            <span class="selected"></span>
+                        </a>
+                        <!-- <ul class="sub-menu" style="display: none;">
+                            <li class="active">
+                                <a href="#">Default Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">New Dashboard #1</a>
+                            </li>
+                            <li>
+                                <a href="#">ew Dashboard #2</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <span class="title">Configuration profiles</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <span class="title">Events</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- END SIDEBAR MENU -->
+            </div>
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <div class="page-content" style="min-height:914px">
+                <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+                <!-- <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                Widget settings form goes here
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn blue">Save changes</button>
+                                <button type="button" class="btn default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        /.modal-content
+                    </div>
+                    /.modal-dialog
+                </div> -->
+                <!-- /.modal -->
+                <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+                <!-- BEGIN PAGE HEADER-->
+                <div class="page-bar">
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href="#">Home</a>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="enroll-device.html">Enroll Devices</a>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="devices.html">Devices</a>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="#">Apple Iphone 6</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END PAGE HEADER-->
+
+
+                <div class="row">
+                    <div class="dv-container-right">
+                        <button type="button" id="btn-ac" class="btn btn-sm default green-stripe btn-action">Action</button>
+                        <div id="right-component" class="page-quick-sidebar-wrapper">
+                            <div class="page-quick-sidebar">
+                                <div class="nav-justified">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active page-quick-sidebar-chat" id="quick_sidebar_tab">
+                                            <div class="page-quick-sidebar-list">
+                                                <div class="page-quick-sidebar-chat-users" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list" data-initialized="1">
+                                                    <ul class="media-list list-items">
+                                                        <li class="media">
+                                                            <div class="media-body">
+                                                                <a href="#">
+                                                                    <span>Unenroll Devices</span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <div class="media-body">
+                                                                <a href="#">
+                                                                    <span>Lock device</span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <div class="media-body">
+                                                                <a href="#">
+                                                                    <span>Wipe device</span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <div class="media-body">
+                                                                <a href="#">
+                                                                    <span>Reset passcode</span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <div class="media-body">
+                                                                <a href="#">
+                                                                    <span>Delete</span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="wrapper-panel" id="">
+                        <!-- <div id="" class="step-bar">
+                                        <div class="complete" style="width:20%;">
+                                            &nbsp;
+                                        </div>
+                                        <div class="incomplete" style="width:20%;">
+                                            &nbsp;
+                                        </div>
+                                        <div class="incomplete" style="width:20%;">
+                                            &nbsp;
+                                        </div>
+                                        <div class="incomplete" style="width:20%;">
+                                            &nbsp;
+                                        </div>
+                                        <div class="incomplete" style="width:20%;">
+                                            &nbsp;
+                                        </div>
+                                    </div> -->
+                        <h3 class="page-title">Apple Iphone 6</h3>
+                        <div id="left-component" class="dv-container-left">
+                            <div class="upper-container">
+                                <div class="device-img">
+                                    <img src="/img/iphone6.png" alt="">
+                                </div>
+                                <div class="device-info">
+                                    <table class="device-spec">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p class="dv-title">Device</p>
+                                                    <p class="dv-feature">Apple Iphone 6</p>
+                                                </td>
+                                                <td>
+                                                    <p class="dv-title">Software</p>
+                                                    <p class="dv-feature">iOS 8.1.2 (12B440)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="dv-title">User</p>
+                                                    <p class="dv-feature">The Anh</p>
+                                                </td>
+                                                <td>
+                                                    <p class="dv-title">Last reported</p>
+                                                    <p class="dv-feature">
+                                                        <!-- <span><i class="fa fa-circle"></i></span> -->
+                                                        14 days ago
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="dv-title">Tags</p>
+                                                    <p class="dv-feature">Smartphone</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div style="clear:left"></div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="tabbable tabbable-tabdrop">
+                                    <ul class="nav nav-tabs devices-ul">
+                                        <li class="active">
+                                            <a href="#tab1" data-toggle="tab" aria-expanded="true">Main</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab2" data-toggle="tab" aria-expanded="false">Settings</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab3" data-toggle="tab" aria-expanded="false">Applications</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab4" data-toggle="tab" aria-expanded="false">Events</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab5" data-toggle="tab" aria-expanded="false">Inventory</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab1">
+                                            <div class="tab-wrapper">
+                                                <div class="main-left">
+                                                    <table class="table-main">
+                                                        <caption><i style="margin-right:5px" class="fa fa-cog"></i><span>Configuration profiles</span>
+                                                        </caption>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    No records to display.
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="table-main">
+                                                        <caption><i style="margin-right:5px" class="fa fa-signal"></i><span>Operator network</span>
+                                                        </caption>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    Current
+                                                                </td>
+                                                                <td>
+                                                                    Unknown (00)
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    Home
+                                                                </td>
+                                                                <td>
+                                                                    -
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    Data roaming
+                                                                </td>
+                                                                <td>
+                                                                    Disabled
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="table-main">
+                                                        <caption><i style="margin-right:5px" class="fa fa-lock"></i><span>Security</span>
+                                                        </caption>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    Encryption status
+                                                                </td>
+                                                                <td>
+                                                                    <i style="margin-right: 5px;" class="fa fa-exclamation-circle text-danger"></i><span>Disable</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    Passcode set
+                                                                </td>
+                                                                <td>
+                                                                    <i style="margin-right: 5px;" class="fa fa-exclamation-circle text-danger"></i><span>No</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="main-right">
+                                                    <div class="main-left-wrapper">
+                                                        <div class="img-storage">
+                                                            <img src="/img/storage-used.png" alt="">
+                                                        </div>
+                                                        <table class="main-spec">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <p class="dv-title">Free storage</p>
+                                                                        <p class="dv-feature">21.8 GB</p>
+                                                                    </td>
+                                                                    <td>
+                                                                        <p class="dv-title">Storage name</p>
+                                                                        <p class="dv-feature">Internal</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <p class="dv-title">Total</p>
+                                                                        <p class="dv-feature">28.7 GB</p>
+                                                                    </td>
+                                                                    <td>
+                                                                        <p class="dv-title">Encrypted</p>
+                                                                        <p class="dv-feature">No</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div style="clear:left"></div>
+                                                    </div>
+                                                    <div class="main-left-divider">
+                                                        <div></div>
+                                                    </div>
+                                                    <div class="main-left-wrapper">
+                                                        <div class="img-storage">
+                                                            <img src="/img/storage-full.png" alt="">
+                                                        </div>
+                                                        <table class="main-spec">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <p class="dv-title">Warranty starts</p>
+                                                                        <p class="dv-feature">-</p>
+                                                                    </td>
+                                                                    <td>
+                                                                        <p class="dv-title">Days left</p>
+                                                                        <p class="dv-feature">-</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <p class="dv-title">Warranty ends</p>
+                                                                        <p class="dv-feature">-</p>
+                                                                    </td>
+                                                                    <td>
+                                                                        <p class="dv-title">Warranty status</p>
+                                                                        <p class="dv-feature">-</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div style="clear:left"></div>
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab2">
+                                            <div class="tab-wrapper">
+                                                <table class="table-setting">
+                                                    <caption><i style="margin-right:5px" class="glyphicon glyphicon-wrench"></i><span>Settings</span>
+                                                    </caption>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                User
+                                                            </td>
+                                                            <td>
+                                                                anhnt_uit_is@yahoo.com
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Organization
+                                                            </td>
+                                                            <td>
+                                                                Global CyberSoft
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Location
+                                                            </td>
+                                                            <td>
+                                                                Viet Nam
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Purchase date
+                                                            </td>
+                                                            <td>
+                                                                May 15 2015
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Waranty ends
+                                                            </td>
+                                                            <td>
+                                                                May 15 2018
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div>
+                                                    <button type="button" class="btn green" disabled>Edit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab3">
+                                            <div class="tab-wrapper">
+                                                <table class="table-app">
+                                                    <caption><i style="margin-right:5px" class="fa fa-archive"></i><span>Applications</span><span class="pull-right">Updated: 05/05/2015</span>
+                                                    </caption>
+                                                    <thead>
+                                                        <th>Name</th>
+                                                        <th>Version</th>
+                                                        <th>Identifier</th>
+                                                        <th>Size</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2X RDP
+                                                            </td>
+                                                            <td>
+                                                                12.0.2304.0
+                                                            </td>
+                                                            <td>
+                                                                com.2X.2XClient
+                                                            </td>
+                                                            <td>
+                                                                15.59 MB
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab4">
+                                            <div class="tab-wrapper">
+                                                <table class="table-event">
+                                                    <caption><i style="margin-right:5px" class="fa fa-calendar"></i><span>Events</span>
+                                                    </caption>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                03/19/2015 05:48:21 PM
+                                                            </td>
+                                                            <td>
+                                                                Security
+                                                            </td>
+                                                            <td>
+                                                                Lock
+                                                            </td>
+                                                            <td>
+                                                                Ready
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                03/19/2015 05:48:21 PM
+                                                            </td>
+                                                            <td>
+                                                                Security
+                                                            </td>
+                                                            <td>
+                                                                Lock
+                                                            </td>
+                                                            <td>
+                                                                Ready
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                03/19/2015 05:48:21 PM
+                                                            </td>
+                                                            <td>
+                                                                Security
+                                                            </td>
+                                                            <td>
+                                                                Lock
+                                                            </td>
+                                                            <td>
+                                                                Ready
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                03/19/2015 05:48:21 PM
+                                                            </td>
+                                                            <td>
+                                                                Security
+                                                            </td>
+                                                            <td>
+                                                                Clear passcode
+                                                            </td>
+                                                            <td>
+                                                                Ready
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                03/19/2015 05:48:21 PM
+                                                            </td>
+                                                            <td>
+                                                                Security
+                                                            </td>
+                                                            <td>
+                                                                Clear passcode
+                                                            </td>
+                                                            <td>
+                                                                Ready
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab5">
+                                            <div class="tab-wrapper">
+                                                <div class="checkbox text-right">
+                                                    <label>
+                                                        <span>Show:</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" value=""> Device
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" value=""> Operation network
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" value=""> Profiles
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" value=""> Security
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" value=""> SIM
+                                                    </label>
+                                                </div>
+                                                <table class="table-event">
+                                                    <caption><i style="margin-right:5px" class="glyphicon glyphicon-phone"></i><span>Devices</span><span class="pull-right">Updated: 05/05/2015</span>
+                                                    </caption>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Device name
+                                                            </td>
+                                                            <td>
+                                                                Anh's iPhone 6
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Manufacturer
+                                                            </td>
+                                                            <td>
+                                                                Apple
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Product name
+                                                            </td>
+                                                            <td>
+                                                                iPhone 6
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Software version
+                                                            </td>
+                                                            <td>
+                                                                iOS 8.1.2 (12B440)
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Storage (free/total)
+                                                            </td>
+                                                            <td>
+                                                                Internal (22360MB / 28453MB)
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                IMEI
+                                                            </td>
+                                                            <td>
+                                                                012670005693227
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                UDID
+                                                            </td>
+                                                            <td>
+                                                                14dcb5153fb235561fb6f12b2f561b5f1bf152151bf
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Wi-Fi MAC address
+                                                            </td>
+                                                            <td>
+                                                                40:30:05:21:ad:0d
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Bluetooth MAC address
+                                                            </td>
+                                                            <td>
+                                                                40:30:05:21:ad:0d
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Store account active
+                                                            </td>
+                                                            <td>
+                                                                Yes
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Do not disturb device
+                                                            </td>
+                                                            <td>
+                                                                No
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="clear:left"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CONTENT -->
+    </div>
+    <!-- END CONTAINER -->
+  
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- BEGIN CORE PLUGINS -->
+    <!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+    <script async="" src="js/analytics.js"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery-migrate.min.js" type="text/javascript"></script>
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+    <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="js/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="js/jquery.cokie.min.js" type="text/javascript"></script>
+    <script src="js/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+
+    <script src="js/jquery.flot.min.js" type="text/javascript"></script>
+    <script src="js/jquery.flot.resize.min.js" type="text/javascript"></script>
+    <script src="js/jquery.flot.categories.min.js" type="text/javascript"></script>
+    <script src="js/jquery.pulsate.min.js" type="text/javascript"></script>
+
+    <script src="js/daterangepicker.js" type="text/javascript"></script>
+    <!-- IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support -->
+
+    <script src="js/jquery.easypiechart.min.js" type="text/javascript"></script>
+    <script src="js/jquery.sparkline.min.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="js/metronic.js" type="text/javascript"></script>
+    <script src="js/layout.js" type="text/javascript"></script>
+    <script src="js/quick-sidebar.js" type="text/javascript"></script>
+    <script src="js/demo.js" type="text/javascript"></script>
+
+    <script src="js/tasks.js" type="text/javascript"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="lib/datatables/js/dataTables.bootstrap.js"></script>
+
+
+
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <script>
+    jQuery(document).ready(function() {
+        Metronic.init(); // init metronic core componets
+        Layout.init(); // init layout
+        QuickSidebar.init(); // init quick sidebar
+        Demo.init(); // init demo features
+
+        Tasks.initDashboardWidget();
+    });
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        $('#devices-table').DataTable({
+            "ordering": false,
+        });
+        $("#btn-ac").live('click', function() {
+            if (
+                $("#right-component").hasClass("action-close") && $("#left-component").hasClass("minimize-margin")
+            ) {
+                $("#right-component").removeClass("action-close");
+                $("#left-component").removeClass("minimize-margin");
+
+            } else {
+                $("#right-component").addClass("action-close");
+                $("#left-component").addClass("minimize-margin");
+            }
+        });
+    });
+    </script>
+
+
+    <!-- END JAVASCRIPTS -->
+
+
+    <!-- END BODY -->
+
+</body>
+
+
+
+</html>

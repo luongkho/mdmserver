@@ -1,0 +1,42 @@
+Template:
+#  forgot_password:
+#    template_code: 0
+#    name: Forgot Password
+#    usage_system: 1
+#    tenant_id: 100456
+#    subject: Forgot Password
+#    template_code: 0
+#  otp_request_using_email:
+#    name: OTP Request using Email
+#    usage_system: 1
+#    tenant_id: 100456
+#    subject: OTP Request using Email
+#  otp_request_using_sms:
+#    name: OTP Request using SMS
+#    usage_system: 1
+#    tenant_id: 100456
+#    subject: OTP Request using SMS
+  end_passcode_to_unclock_device:
+    name: Send Passcode to Unclock Device
+    content: <p>Dear ${user}, </p><p>Below is the passcode to unlock your [${deviceName}] mobile device:</p><h3>${passcode}</h3><p>We strongly recommend you to change your passcode after unlocking your device.</p><p>Thank you for using our service.</p><p>MDM Administrator</p>
+    usage_system: 3
+    tenant_id: 100456
+    subject: Send Passcode to Unclock Device
+    template_code: 2
+  send_link_to_download_device_connect:
+    name: Send Link to Download Device Connect
+    content: <p>Dear ${name},</p><p>In order to enroll your device to iWebGate MDM-Server, please click on the following link to download application.</p><p><a href='${link}'>Application link</a></p><p>Thank you for using our service.</p><p>iWebGate MDM-Server</p>
+    usage_system: 3
+    tenant_id: 100456
+    subject: Send Link to Download Device Connect
+    template_code: 1
+#  send_secret_key_using_email:
+#    name: Send Secret Key using Email
+#    usage_system: 2
+#    tenant_id: 100456
+#    subject: Send Secret Key using Email
+#  send_secret_key_using_sms:
+#    name: Send Secret Key using SMS
+#    usage_system: 2
+#    tenant_id: 100456
+#    subject: Send Secret Key using SMS

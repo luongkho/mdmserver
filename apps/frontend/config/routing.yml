@@ -1,0 +1,182 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: device, action: index }
+ajax_device_list:
+  url:   /ajax/device.:sf_format
+  param: { module: device, action: ajaxList }
+  requirements:
+    sf_format: (json|xml)
+login:
+  url:   /login
+  param: { module: auth, action: index }
+signin:
+  url:   /signIn
+  param: { module: auth, action: signin }
+logout:
+  url:   /logout
+  param: { module: auth, action: logout }
+command:
+    url: /command
+    param: { module: device, action: command }
+device:
+  url:   /device
+  class: sfDoctrineRoute
+  param: { module: device, action: index }
+  options:  { model: DeviceInventory, type: object }
+device_detail:
+  url:      /device/:id
+  class:    sfDoctrineRoute
+  param:    { module: device, action: show }
+  options: { model: DeviceInventory, type: object }
+  requirements:
+    id: \d+
+ajax_action_device_task:
+  url:   /ajax/device_task.:sf_format
+  param: { module: device, action: ajaxDeviceTask }
+  requirements:
+    sf_format: (json|xml)
+enroll:
+  url:   /enroll
+  param: { module: enroll, action: index }
+dashboard:
+  url:   /dashboard
+  param: { module: auth, action: dashboard }
+manage_templates:
+  url:   /manage_templates
+  param: { module: auth, action: template }
+profile:
+  url:   /profile
+  param: { module: device, action: profile }
+events:
+  url:   /events
+  param: { module: device, action: events }
+lock_device:
+  url:  /device/lockdevice
+  param: { module: device, action: lock}
+ajax_add_new_user:
+  url:   /ajax/add_new_user.:sf_format
+  param: { module: auth, action: ajaxAddNewUser}
+  requirements:
+    sf_format: (json|xml)
+ajax_add_new_location:
+  url:   /ajax/add_new_location.:sf_format
+  param: { module: auth, action: ajaxAddNewLocation}
+  requirements:
+    sf_format: (json|xml)
+ajax_delete_location:
+  url:   /ajax/delete_location.:sf_format
+  param: { module: auth, action: ajaxDeleteLocation}
+  requirements:
+    sf_format: (json|xml)
+ajax_get_location_info:
+  url:   /ajax/get_table_location.:sf_format
+  param: { module: auth, action: ajaxGetLocationInfo}
+  requirements:
+    sf_format: (json|xml)
+ajax_add_new_profile:
+  url:   /ajax/add_new_profile.:sf_format
+  param: { module: auth, action: ajaxAddProfile}
+  requirements:
+    sf_format: (json|xml)
+user_management:
+  url:   /user_management
+  param: { module: auth, action: management }
+location_management:
+  url:   /location_management
+  param: { module: auth, action: locationManagement }
+device_linkup:
+  url:   /device_linkup
+  param: { module: device, action: linkupManagement }
+ajax_device_linkup_list:
+  url:   /ajax/device_linkup.:sf_format
+  param: { module: device, action: ajaxDeviceLinkupList }
+  requirements:
+    sf_format: (json|xml)
+upload_device_linkup:
+  url:   /ajax/upload_file.:sf_format
+  param: { module: device, action: uploadFileLinkup }
+  requirements:
+    sf_format: (json|xml)
+ajax_location_list:
+  url:   /ajax/location_list
+  param: { module: auth, action: ajaxLocationList }
+  requirements:
+    sf_format: (json|xml)
+ajax_user_list:
+  url:   /ajax/user_list.:sf_format
+  param: { module: auth, action: ajaxUserList }
+  requirements:
+    sf_format: (json|xml)
+ajax_get_user:
+  url:   /ajax/get_user.:sf_format
+  param: { module: auth, action: ajaxGetUser }
+  requirements:
+    sf_format: (json|xml)
+ajax_get_profile:
+  url:   /ajax/get_profile.:sf_format
+  param: { module: auth, action: ajaxGetProfile }
+  requirements:
+    sf_format: (json|xml)
+ajax_delete_user:
+  url:   /ajax/delete_user.:sf_format
+  param: { module: auth, action: ajaxDeleteUser }
+  requirements:
+    sf_format: (json|xml)
+ajax_delete_profile:
+  url:   /ajax/delete_profile.:sf_format
+  param: { module: auth, action: ajaxDeleteProfile }
+  requirements:
+    sf_format: (json|xml)
+ajax_enroll_device:
+  url:   /ajax/enroll_device.:sf_format
+  param: { module: enroll, action: ajaxEnrollDevice }
+  requirements:
+    sf_format: (json|xml)
+ajax_get_location_by_organization:
+  url:   /ajax/get_location.:sf_format
+  param: { module: device, action: ajaxGetLocation }
+  requirements:
+    sf_format: (json|xml)
+ajax_event_list:
+  url:    /ajax/event_list.:sf_format
+  param:  { module: device, action: ajaxEventList }
+ajax_edit_tag:
+  url:    /ajax/edit_tag.:sf_format
+  param:  { module: device, action: ajaxEditTag }
+ajax_profile_list:
+  url:    /ajax/profile_list.:sf_format
+  param:  { module: device, action: ajaxProfileList }
+ajax_locate_device:
+  url:   /ajax/locate_device.:sf_format
+  param: { module: device, action: ajaxLocateDevice}
+  requirements:
+    sf_format: (json|xml)
+ajax_template_list:
+  url:   /ajax/template_list.:sf_format
+  param: { module: auth, action: ajaxTemplateList}
+  requirements:
+    sf_format: (json|xml)
+ajax_get_template:
+  url:   /ajax/get_template.:sf_format
+  param: { module: auth, action: ajaxGetTemplate }
+  requirements:
+    sf_format: (json|xml)
+ajax_update_template:
+  url:   /ajax/update_template.:sf_format
+  param: { module: auth, action: ajaxUpdateTemplate}
+  requirements:
+    sf_format: (json|xml)
+ajax_get_warranty:
+    url:   /ajax/get_warranty.:sf_format
+    param: { module: device, action: ajaxGetWarranty}
+    requirements:
+    sf_format: (json|xml)
+ajax_get_tag_info:
+  url:   /ajax/get_organization.:sf_format
+  param: { module: device, action: ajaxGetTagInfo }
+  requirements:
+    sf_format: (json|xml)

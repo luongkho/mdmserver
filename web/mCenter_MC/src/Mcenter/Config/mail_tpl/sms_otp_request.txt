@@ -1,0 +1,1 @@
+Dear {username}, Your OTP : {OTP}

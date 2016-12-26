@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<s:Envelope xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing"> 
+    <s:Header> 
+        <a:Action s:mustUnderstand="1"> 
+            http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy/IPolicy/GetPoliciesResponse 
+        </a:Action> 
+        <ActivityId CorrelationId="08d2997e-e8ac-4c97-a4ce-d263e62186ab" xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics"> 
+            d9eb2fdd-e38a-46ee-bd93-aea9dc86a3b8</ActivityId> 
+        <a:RelatesTo>MDMUUID</a:RelatesTo> 
+    </s:Header> 
+    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+        <GetPoliciesResponse xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy"> 
+            <response> 
+                <policyFriendlyName xsi:nil="true"  
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/> 
+                <nextUpdateHours xsi:nil="true"  
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/> 
+                <policiesNotChanged xsi:nil="true"  
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/> 
+                <policies> 
+                    <policy> 
+                        <policyOIDReference>0</policyOIDReference>
+                        <cAs xsi:nil="true" /> 
+                        <attributes> 
+                            <policySchema>3</policySchema> 
+                            <privateKeyAttributes> 
+                                <minimalKeyLength>2048</minimalKeyLength> 
+                                <keySpec xsi:nil="true" /> 
+                                <keyUsageProperty xsi:nil="true" /> 
+                                <permissions xsi:nil="true" /> 
+                                <algorithmOIDReference xsi:nil="true" /> 
+                                <cryptoProviders xsi:nil="true" /> 
+                            </privateKeyAttributes> 
+                            <supersededPolicies xsi:nil="true" /> 
+                            <privateKeyFlags xsi:nil="true" /> 
+                            <subjectNameFlags xsi:nil="true" /> 
+                            <enrollmentFlags xsi:nil="true" /> 
+                            <generalFlags xsi:nil="true" /> 
+                            <hashAlgorithmOIDReference>0</hashAlgorithmOIDReference> 
+                            <rARequirements xsi:nil="true" /> 
+                            <keyArchivalAttributes xsi:nil="true" /> 
+                            <extensions xsi:nil="true" /> 
+                        </attributes> 
+                    </policy> 
+                </policies> 
+            </response> 
+            <cAs xsi:nil="true" /> 
+            <oIDs> 
+                <oID> 
+                    <value>1.3.14.3.2.29</value> 
+                    <group>1</group> 
+                    <oIDReferenceID>0</oIDReferenceID> 
+                    <defaultName>szOID_OIWSEC_sha1RSASign</defaultName> 
+                </oID> 
+            </oIDs> 
+        </GetPoliciesResponse> 
+    </s:Body> 
+</s:Envelope>

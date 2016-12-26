@@ -1,0 +1,43 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+mdm_server:
+  url: /server
+  method: PUT
+  param: { module: mdm, action: server }
+mdm_checkin:
+  url: /checkin
+  method: PUT
+  param: { module: mdm, action: checkin }
+mdm_service_cmd_send:
+  url: /command/send
+  method: GET
+  param: { module: services, action: sendcmd }
+mdm_test:
+  url: /test
+  method: PUT
+  param: {module: mdm, action: test}  
+mdm_checkin_discovery:
+  url: /EnrollmentServer/Discovery.svc
+  method: PUT
+  param: { module: mdm, action: checkin }  
+mdm_policy_enrollment:
+  url: /EnrollmentServer/EnrollmentPolicy.svc
+  method: PUT
+  param: { module: mdm, action: checkin }
+mdm_security_enrollment:
+  url: /EnrollmentServer/Enrollment.svc
+  method: PUT
+  param: { module: mdm, action: checkin }
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

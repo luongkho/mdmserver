@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 22, 2015, 12:51:18 PM
+    Author     : luongmh.sd
+*/
+
+
+#devices-table tbody tr.even:hover, #devices-table tbody tr.even td.highlighted {
+    background-color: #D9DBE1;
+}
+
+#devices-table tbody tr.odd:hover, #devices-table tbody tr.odd td.highlighted {
+    background-color: #E8E8E8;
+}
+
+.help-message   {
+    font-style: italic;
+    text-align: right; 
+    font-size: small;
+}

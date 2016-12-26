@@ -1,0 +1,19 @@
+<SyncBody>
+    <Status>
+        <CmdID>1</CmdID>
+        <MsgRef>1</MsgRef>
+        <CmdRef>0</CmdRef>
+        <Cmd>SyncHdr</Cmd>
+        <Data>200</Data>
+    </Status>
+    <Status>
+        <CmdID>2</CmdID>
+        <MsgRef>1</MsgRef>
+        <CmdRef>2</CmdRef>
+        <Cmd>Alert</Cmd>
+        <Data>200</Data>
+    </Status>
+    BodyValue
+    <Final/>
+</SyncBody>
+</SyncML>

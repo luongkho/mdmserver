@@ -1,0 +1,58 @@
+<wap-provisioningdoc version="1.1"> 
+    <characteristic type="CertificateStore"> 
+        <characteristic type="Root"> 
+            <characteristic type="System"> 
+                <characteristic type="ROOTSYSTEMTHUMBPRINT"> 
+                    <parm name="EncodedCertificate" value="ROOTSYSTEMCERT" />
+                </characteristic>
+            </characteristic> 
+        </characteristic> 
+        <characteristic type="My" >       
+            <characteristic type="User">
+                <characteristic type="MYUSERTHUMPRINT">
+                    <parm name="EncodedCertificate" value="MYUSERCERT" />
+                    <characteristic type="PrivateKeyContainer"/>
+                </characteristic>              
+            </characteristic>
+        </characteristic> 
+    </characteristic>
+    <characteristic type="APPLICATION">
+        <parm name="APPID" value="w7" />
+        <parm name="PROVIDER-ID" value="MDMSERVER" />
+        <parm name="NAME" value="MDMCloud" />
+        <parm name="ADDR" value="MDMSERVERURL" />
+        <parm name="CONNRETRYFREQ" value="6" />
+        <parm name="INITIALBACKOFFTIME" value="30000" />
+        <parm name="MAXBACKOFFTIME" value="120000" />
+        <parm name="BACKCOMPATRETRYDISABLED" />
+        <parm name="DEFAULTENCODING" value="application/vnd.syncml.dm+xml" />
+        <parm name="SSLCLIENTCERTSEARCHCRITERIA" value="Subject=CN%3DSSLCLIENTCERTSSL&amp;Stores=My%5CUser" />
+        <characteristic type="APPAUTH">
+            <parm name="AAUTHLEVEL" value="CLIENT" />
+            <parm name="AAUTHTYPE" value="DIGEST" />
+            <parm name="AAUTHNAME" value="MDMCLIENT" />
+            <parm name="AAUTHSECRET" value="MDMCLIENT" />
+            <parm name="AAUTHDATA" value="Y3VvbmdkYW5nMjU2NQ==" />
+        </characteristic>
+        <characteristic type="APPAUTH">
+            <parm name="AAUTHLEVEL" value="APPSRV" />
+            <parm name="AAUTHTYPE" value="BASIC" />
+            <parm name="AAUTHNAME" value="AAUTHNAME_VALUE" />
+            <parm name="AAUTHSECRET" value="AAUTHSECRET_VALUE"/>
+        </characteristic>
+    </characteristic>
+    <characteristic type="DMClient">
+        <characteristic type="Provider"> 
+            <characteristic type="MDMSERVER"> 
+                <characteristic type="Poll"> 
+                    <parm name="NumberOfFirstRetries" value="1" datatype="integer" /> 
+                    <parm name="IntervalForFirstSetOfRetries" value="1" datatype="integer" /> 
+                    <parm name="NumberOfSecondRetries" value="5" datatype="integer" /> 
+                    <parm name="IntervalForSecondSetOfRetries" value="60" datatype="integer" /> 
+                    <parm name="NumberOfRemainingScheduledRetries" value="0" datatype="integer" />
+                    <parm name="IntervalForRemainingScheduledRetries" value="1440" datatype="integer" /> 
+                </characteristic>
+            </characteristic>
+        </characteristic>
+    </characteristic>
+</wap-provisioningdoc>

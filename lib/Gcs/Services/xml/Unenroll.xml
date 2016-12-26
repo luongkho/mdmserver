@@ -1,0 +1,12 @@
+<Exec> 
+    <CmdID>CommandUUID</CmdID> 
+    <Item> 
+        <Target> 
+            <LocURI>./Vendor/MSFT/DMClient/Unenroll</LocURI> 
+        </Target> 
+        <Meta> 
+            <Format xmlns="syncml:metinf">chr</Format> 
+        </Meta> 
+        <Data>MDMSERVER</Data>  
+    </Item> 
+</Exec>

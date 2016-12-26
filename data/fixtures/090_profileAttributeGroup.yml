@@ -1,0 +1,7 @@
+ProfileAttributeGroup:
+  wifi:
+   name: Wifi
+  passcode:
+   name: Passcode
+  location:
+   name: Location

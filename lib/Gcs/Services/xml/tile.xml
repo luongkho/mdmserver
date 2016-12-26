@@ -1,0 +1,8 @@
+<tile>
+    <visual version="2">
+        <binding template="TileWide310x150ImageAndText01" fallback="TileWideImageAndText01">
+            <image id="1" src="IMAGETILE"/>
+            <text id="1">MSGTILE</text>
+        </binding>
+    </visual>
+</tile>

@@ -1,0 +1,10 @@
+formatter:
+    name:
+         pretty
+suites:
+    main:
+        namespace: Gcs
+        psr4_prefix: Gcs
+        src_path: lib\Gcs
+extensions:
+  - Cjm\PhpSpec\Extension\TypeHintedMethodsExtension

@@ -1,0 +1,13 @@
+{
+    "require": {
+        "apache/log4php": "2.3.0",
+        "phpmailer/phpmailer": "dev-master",
+        "peej/tonic": "dev-master"
+    },
+    "bin": ["web/dispatch.php"],
+    "autoload": {
+        "psr-0": {
+            "Mcenter": "src/"
+        }
+    }
+}

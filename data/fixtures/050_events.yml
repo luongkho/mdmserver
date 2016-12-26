@@ -1,0 +1,11 @@
+DeviceEvent:
+<?php for ($i = 1; $i <= 10; $i++): ?>
+ IOSApp_<?php echo $i ?>:
+    model: App_<?php echo $i."\n"  ?>
+    DeviceInventory: IOS_1
+    event_type: type<?php echo $i."\n"  ?>
+    event_name: name<?php echo $i."\n"  ?>
+    sent_by : 1
+    status: 1
+    command_data:
+<?php endfor ?>

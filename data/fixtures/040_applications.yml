@@ -1,0 +1,17 @@
+DeviceApplication:
+<?php for ($i = 1; $i <= 10; $i++): ?>
+ IOSApp_<?php echo $i ?>:
+    name: App_<?php echo $i."\n"  ?>
+    DeviceInventory: IOS_1
+    version: version<?php echo $i."\n"  ?>
+    identifier: identifer<?php echo $i."\n"  ?>
+    size: <?php echoln($i);?>
+<?php endfor ?>
+<?php for ($i = 1; $i <= 10; $i++): ?>
+ IOSApp2_<?php echo $i ?>:
+    name: App_<?php echo $i."\n"  ?>
+    DeviceInventory: IOS_2
+    version: version<?php echo $i."\n"  ?>
+    identifier: identifer<?php echo $i."\n"  ?>
+    size: <?php echoln($i);?>
+<?php endfor ?>

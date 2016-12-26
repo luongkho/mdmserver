@@ -1,0 +1,12 @@
+DeviceProfile:
+<?php for ($i = 1; $i <= 10; $i++): ?>
+    Android_<?php echo $i ?>:
+        Profile: Android_profile_<?php echo $i."\n"  ?>
+        DeviceInventory: IOS_<?php echo $i."\n"  ?>
+    IOS_wifi_<?php echo $i ?>:
+        Profile: IOS_profile_wifi_<?php echo $i."\n"  ?>
+        DeviceInventory: ANDROID_<?php echo $i."\n"  ?>
+    IOS_pc_<?php echo $i ?>:
+        Profile: IOS_profile_passcode_<?php echo $i."\n"  ?>
+        DeviceInventory: ANDROID_<?php echo $i."\n"  ?>
+<?php endfor; ?>

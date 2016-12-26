@@ -1,0 +1,19 @@
+<Sequence>
+    <CmdID>command_uuid</CmdID>
+    <Exec>
+        <CmdID>LockAndReset_command</CmdID>
+        <Item>
+            <Target>
+                <LocURI>./Vendor/MSFT/RemoteLock/LockAndResetPIN</LocURI>
+            </Target>
+        </Item>
+    </Exec>
+    <Get>
+        <CmdID>GetNewPIN_command</CmdID>
+        <Item>
+            <Target>
+                <LocURI>./Vendor/MSFT/RemoteLock/NewPINValue</LocURI>
+            </Target>
+        </Item>
+    </Get>
+</Sequence>

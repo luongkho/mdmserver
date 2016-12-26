@@ -1,0 +1,35 @@
+# //////////////////////////////////////////////////////////////////////////////
+# //
+# //  Copyright (C) 2011  DAINIPPON SCREEN MFG. CO., LTD.  All Rights Reserved.
+# //
+# //  N O T I C E
+# //  THIS MATERIAL IS CONSIDERED A TRADE SECRET BY DAINIPPON SCREEN.
+# //  UNAUTHORIZED ACCESS IS PROHIBITED.
+# //
+# //////////////////////////////////////////////////////////////////////////////
+level: debug
+loggers:
+  mdm:
+    level: DEBUG
+    appenders: [default]
+appenders:
+  default:
+    class: LoggerAppenderDailyFile
+    layout:
+      class: LoggerLayoutSimple
+      params:
+    params:
+      file: %SF_LOG_DIR%/mdm%s.log
+      append: true
+      datePattern: Ymd
+  process:
+    class: LoggerAppenderDailyFile
+    layout:
+      class: LoggerLayoutSimple
+      params:
+    params:
+      file: log.txt
+      append: true
+      datePattern: Ymd
+    filters:
+      - { class: LoggerFilterLevelRange, params: { levelMin: error, levelMax: error,acceptOnMatch:true } }

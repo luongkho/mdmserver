@@ -1,0 +1,78 @@
+<?php
+use Gcs\Repository\UserRepository;
+$userRep = new UserRepository();
+$users = $userRep->getList();
+$totals = count($users);
+?>
+DeviceInventory:
+<?php for ($i = 1; $i <= 130; $i++): ?>
+ IOS_<?php echo $i ?>:
+    device_name: Android_<?php echo $i."\n"  ?>
+    manufacturer: Samsum
+    product_name: Android_<?php echo $i."\n"  ?>
+    device_type: ABC123
+    version: 4.0
+    organization: AAAAAAA
+    location: USA
+    platform: 1
+    enroll_status: <?php echoln(array_rand(array(1,2,3))) ;?>
+    udid: 123456789  
+    user_id : <?php echoln($users[$i % $totals]->getId()) ?>
+    imei: <?php echo $i."imei\n" ?>
+    wifi_mac_address: <?php echo $i."adr\n" ?>
+    owner_name: <?php echoln($users[$i % $totals]->getFullName()) ?>
+    owner_email: <?php echoln($users[$i % $totals]->getEmail()) ?>
+<?php endfor ?>
+<?php for ($i = 1; $i <= 100; $i++): ?>
+ IOS2_<?php echo $i ?>:
+    device_name: IOS2_<?php echo $i."\n"  ?>
+    manufacturer: Apple
+    product_name: IPAD_IOS_<?php echo $i."\n"  ?>
+    device_type: MC774LL
+    version: 4.0
+    organization: AAAAAAA
+    location: USA
+    platform: 1
+    enroll_status: <?php echoln(array_rand(array(1,2,3))) ;?>
+    user_id : <?php echoln($users[$i % $totals]->getId()) ?>
+    imei: <?php echo $i."imei\n" ?>
+    wifi_mac_address: <?php echo $i."adr\n" ?>
+    owner_name: <?php echoln($users[$i % $totals]->getFullName()) ?>
+    owner_email: <?php echoln($users[$i % $totals]->getEmail()) ?>
+<?php endfor ?>
+<?php for ($i = 1; $i <= 170; $i++): ?>
+ ANDROID_<?php echo $i ?>:
+    device_name: ANDROID_<?php echo $i."\n"  ?>
+    manufacturer: Apple
+    product_name: TABLET_<?php echo $i."\n"  ?>
+    device_type: MC774LL
+    version: 4.0
+    organization: AAAAAAA
+    location: USA
+    platform: 2
+    enroll_status: <?php echoln(array_rand(array(1,2,3))) ;?>
+    user_id : <?php echoln($users[$i % $totals]->getId()) ?>
+    imei: <?php echo $i."imei\n" ?>
+    wifi_mac_address: <?php echo $i."adr\n" ?>
+    owner_name: <?php echoln($users[$i % $totals]->getFullName()) ?>
+    owner_email: <?php echoln($users[$i % $totals]->getEmail()) ?>
+<?php endfor ?>
+<?php for ($i = 1; $i <= 140; $i++): ?>
+ WP_<?php echo $i ?>:
+    device_name: WP_<?php echo $i."\n"  ?>
+    manufacturer: Apple
+    product_name: TABLET_<?php echo $i."\n"  ?>
+    device_type: MC774LL
+    version: 4.0
+    organization: AAAAAAA
+    location: USA
+    platform: 3
+    purchase_date: 
+    warranty_end:
+    enroll_status: <?php echoln(array_rand(array(1,2,3))) ;?>
+    user_id : <?php echoln($users[$i % $totals]->getId()) ?>
+    imei: <?php echo $i."imei\n" ?>
+    wifi_mac_address: <?php echo $i."adr\n" ?>
+    owner_name: <?php echoln($users[$i % $totals]->getFullName()) ?>
+    owner_email: <?php echoln($users[$i % $totals]->getEmail()) ?>
+<?php endfor ?>

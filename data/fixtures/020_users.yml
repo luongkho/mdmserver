@@ -1,0 +1,31 @@
+#UserInfo:
+#  dungdh:
+#    tenant_id: 100456
+#    user_name : dungdh
+#    password : <?php echoln(sha1( '123123'. md5('123123') ) . ':' . md5('123123')) ?>
+#    first_name: Dung
+#    last_name: Huynh
+#    email : dungdh@gcs-vn.com
+#    Role : admin
+#    status: 1
+#    phone_number: 0905533205
+#  thaottv:
+#    tenant_id: 100456
+#    user_name : thaottv
+#    password : <?php echoln(sha1( '123123'. md5('123123') ) . ':' . md5('123123')) ?>
+#    first_name: Thao
+#    last_name: Vo
+#    email : thaottv@gcs-vn.com
+#    Role : admin
+#    status: 1
+#    phone_number: 0905678900
+#  longtm:
+#    tenant_id: 100456
+#    user_name : longtm
+#    password : <?php echoln(sha1( '123123'. md5('123123') ) . ':' . md5('123123')) ?>
+#    first_name: Merlin
+#    last_name: Mai
+#    email : longtm@ict-ba1.projectsmail.com
+#    Role : admin
+#    status: 1
+#   phone_number: 01674781188

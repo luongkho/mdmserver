@@ -1,0 +1,116 @@
+all:
+    # Notification
+    notificationMessages:
+        data:
+            # Help messages
+            tooltip:
+                username:
+                    title:   "Username Requirement"
+                    content: "Your Username must contain at least 6 alphabetic and/or numeric characters with no spaces"
+                password:
+                    title:   "Password Requirement"
+                    content: "Your Password must: \n .Contain at least 8 characters \n .Contain at least 2 of the following: uppercase, lowercase, numeric \n .Not contain spaces"
+                pc_alphanum:
+                    title:   "Require alphanumeric value"
+                    content: "Require passcodes to contain at least one letter"
+                pc_auto_lock:
+                    title:   "Auto-Lock"
+                    content: "Device automatically locks when time period elapses"
+                pc_min_length:
+                    title:   "Minimum passcode length"
+                    content: "Smallest number of passcode characters allowed"
+                pc_history:
+                    title:   "Passcode history"
+                    content: "Number of unique passcodes before reuse"
+                pc_min_complex_char:
+                    title:   "Minimum number of complex characters"
+                    content: "Smallest number of non-alphanumeric characters allowed"
+                pc_period_device_lock:
+                    title:   "Grace period for device lock"
+                    content: "Amount of time the device can be locked without prompting for passcode on unlock"
+                pc_age:
+                    title:   "Maximum passcode age"
+                    content: "Days after which passcode must be changed"
+                pc_num_failed:
+                    title:   "Maximum number of failed attempts"
+                    content: "Number of passcode entry attempts allowed before all data on device will be erased"
+            N9001:
+                0: "For the Device Location Profile to work properly,"
+                1: "please restrict the Distance to less than 20 meters"
+            N9002: "Upload filename_v1.0.0.xxxx.${extension}"
+            
+            # Normal notification
+            N1001: "Your command was sent successfully"
+            N1002: "Your command was expired"
+            N2001: "The latest application was uploaded successfully"
+            N3001: "Provision device linkup was sent successfully"
+            N4002: "This device was allowed re-enroll"
+
+
+    # Error
+    errorMessages:
+        data:
+            # Account error
+            E101: "Email existed"
+            E102: "Username existed"
+            E103: "Old Password does not match"
+            E104: "Username or password is incorrect"
+            E105: "You can not access this page"
+            E106:
+                0: "The username or password you entered is not valid, please check your credentials and try again"
+                1: "Please note that your username and password are case sensitive"
+            E107: "Your account has been deleted"
+                
+            # Belong to database error 
+            E2001: "User does not exist"
+            E2002: "Error while delete profile"
+            E2003: "Profile group does not found"
+            E2004: "Location existed"
+            E2005: "Error while adding data"
+            E2006: "Error while delete data"
+            E2007: "Organization does not exist"
+            E2008: "Device does not exist"
+            
+            # Email error
+            E3001: "Device does not exist"
+            E3002: "Failed to send mail to user"
+            E3003: "Template does not exist"
+            E3004: "Subject is empty"
+            E3005: "Content is empty"
+            E3006: "Template name is empty"
+            
+            #User action error
+            E4001: "Failed to send request"
+            E4002: "Failed to push notification"
+            E4003: "Passcode does not exist"
+            E4004: "Device is unenrolled"
+                # Unlock iOS
+            E4005: "Fail to unlock your device"
+            E4006: "This device was allowed re-enroll before"
+            
+            # Upload file error
+            E6001: "Can't upload the file ${filename} : Folder doesn't exist"
+            E6002: "Can't upload the file ${filename} : Folder not writeable"
+            E6003: "Can't upload the file ${filename} : File not writeable"
+            E6011: "Folder upload is not available, please check it"
+            E6012: "The file extension is not valid, please using ${extension} file"
+            E6014: "File name has wrong structure, structure like: filename_v1.0.0.xxxx"
+            E6016: "No file specified"
+            E6017: "Failed to upload the latest application"
+            
+            # Unknown error
+            E7001: "Unknown error"
+            
+            
+    # Confirm
+    confirmMessages:
+        data:
+            # Delete user
+            C1001: "Are you sure to delete?"
+            C1002: "Are you sure to remove this profile?"
+            C2002: "Are you sure to get log of this device?"
+            C2003: "Are you sure to unenroll this device?"
+            C2004: "Are you sure to allow re-enroll this device?"
+            C2005: "Are you sure to lock this device?"
+            C2006: "Are you sure to remove application data in this device?"
+            C2007: "Are you sure to reset passcode of this device?"

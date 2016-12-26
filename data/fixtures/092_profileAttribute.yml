@@ -1,0 +1,88 @@
+ProfileAttribute:
+    android_distance:
+        profile_attribute_name: Distance
+        profile_attribute_key: distance
+        ProfileAttributeGroup: location
+    android_interval:
+        profile_attribute_name: Interval
+        profile_attribute_key: interval
+        ProfileAttributeGroup: location
+    ios_wifi_ssid:
+        profile_attribute_name: Wifi SSID
+        profile_attribute_key: wifi_ssid
+        ProfileAttributeGroup: wifi
+    ios_wifi_autoJoin:
+        profile_attribute_name: Wifi Auto Join
+        profile_attribute_key: wifi_auto_join
+        ProfileAttributeGroup: wifi
+    ios_wifi_hiddenNetwork:
+        profile_attribute_name: Wifi Hidden Network
+        profile_attribute_key: wifi_hidden_network
+        ProfileAttributeGroup: wifi
+    ios_wifi_proxySetup:
+        profile_attribute_name: Wifi Proxy Setup
+        profile_attribute_key: wifi_proxy_setup
+        ProfileAttributeGroup: wifi
+    ios_wifi_proxyServer:
+        profile_attribute_name: Wifi Proxy Server
+        profile_attribute_key: wifi_proxy_server
+        ProfileAttributeGroup: wifi
+    ios_wifi_proxyPort:
+        profile_attribute_name: Wifi Proxy Port
+        profile_attribute_key: wifi_proxy_port
+        ProfileAttributeGroup: wifi
+    ios_wifi_proxyAuthent:
+        profile_attribute_name: Wifi Proxy Authentication
+        profile_attribute_key: wifi_proxy_authentication
+        ProfileAttributeGroup: wifi
+    ios_wifi_proxyPassword:
+        profile_attribute_name: Wifi Proxy Password
+        profile_attribute_key: wifi_proxy_password
+        ProfileAttributeGroup: wifi
+    ios_wifi_securityType:
+        profile_attribute_name: Wifi Security Type
+        profile_attribute_key: wifi_security_type
+        ProfileAttributeGroup: wifi
+    ios_wifi_password:
+        profile_attribute_name: Wifi Password
+        profile_attribute_key: wifi_password
+        ProfileAttributeGroup: wifi
+    # ios Passcode
+    #
+    ios_passcode_simpleValue:
+        profile_attribute_name: Passcode Simple Value
+        profile_attribute_key: pc_simple_value
+        ProfileAttributeGroup: passcode
+    ios_passcode_alphanum:
+        profile_attribute_name: Passcode Alphanum
+        profile_attribute_key: pc_alphanum
+        ProfileAttributeGroup: passcode
+    ios_passcode_minLength:
+        profile_attribute_name: Passcode Min Length
+        profile_attribute_key: pc_min_length
+        ProfileAttributeGroup: passcode
+    ios_passcode_minComplexChar:
+        profile_attribute_name: Passcode Min Complex Char
+        profile_attribute_key: pc_min_complex_char
+        ProfileAttributeGroup: passcode
+    ios_passcode_age:
+        profile_attribute_name: Passcode Age
+        profile_attribute_key: pc_age
+        ProfileAttributeGroup: passcode
+    ios_passcode_autoLock:
+        profile_attribute_name: Passcode Auto Lock
+        profile_attribute_key: pc_auto_lock
+        ProfileAttributeGroup: passcode
+    ios_passcode_history:
+        profile_attribute_name: Passcode History
+        profile_attribute_key: pc_history
+        ProfileAttributeGroup: passcode
+    ios_passcode_periodDeviceLock:
+        profile_attribute_name: Passcode Period Device Lock
+        profile_attribute_key: pc_period_device_lock
+        ProfileAttributeGroup: passcode
+    ios_passcode_numFailed:
+        profile_attribute_name: Passcode Num Failed
+        profile_attribute_key: pc_num_failed
+        ProfileAttributeGroup: passcode
+    

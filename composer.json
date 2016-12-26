@@ -1,0 +1,25 @@
+{
+    "config": {
+        "vendor-dir": "lib/vendor"
+    },
+    "require": {
+        "rodneyrehm/plist": "~2.0"
+    },
+     "require-dev": {
+        "behat/behat": "2.4.*@stable",
+        "phpspec/phpspec": "~2.0",
+        "phpspec/prophecy": "~1.0",
+        "fabpot/php-cs-fixer": "^1.8",
+        "ciaranmcnulty/phpspec-typehintedmethods": "~1.1"
+    },
+    "autoload": {
+        "files": ["lib/symfony_autoload.php"],
+        "psr-4": {
+			"Gcs\\": "lib/Gcs/",
+            "": [
+                "lib/model/doctrine",
+                "lib/model/doctrine/base"
+            ]
+		}
+	}
+}

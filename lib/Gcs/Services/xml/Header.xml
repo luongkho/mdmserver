@@ -1,0 +1,13 @@
+<SyncML xmlns="SYNCML:SYNCML1.2">
+    <SyncHdr>
+        <VerDTD>VerDTDValue</VerDTD> 
+        <VerProto>VerProtoValue</VerProto>
+        <SessionID>SessionIDValue</SessionID>
+        <MsgID>mesIDValue</MsgID>
+        <Target>
+            <LocURI>TargetURIValue</LocURI>
+        </Target>
+        <Source>
+            <LocURI>SourceURIValue</LocURI>
+        </Source>
+    </SyncHdr>

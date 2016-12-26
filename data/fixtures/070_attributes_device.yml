@@ -1,0 +1,18 @@
+InventoryAttribute:
+ available_device_capacity:
+    name: Available Device Capacity
+    slug: available_device_capacity
+    InventoryAttributeGroup: devices  
+ device_capacity:
+    name: Device Capacity
+    slug: device_capacity
+    InventoryAttributeGroup: devices
+ storage_name:
+    name: Storage Name
+    slug: storage_name
+    InventoryAttributeGroup: devices
+ encrypted:
+    name: Encrypted
+    slug: encrypted
+    InventoryAttributeGroup: devices
+  

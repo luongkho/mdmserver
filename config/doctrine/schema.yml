@@ -1,0 +1,230 @@
+#Role:
+#  connection: mcenter
+#  columns:    
+#    role_id: { type: integer, primary: true}
+#    role_name: { type: string(255), notnull: true, unique: true }
+
+#UserInfo:
+#  connection: mcenter
+#  tableName: user_info 
+#  columns:    
+#    tenant_id : {type: integer}
+#    user_name : {type: string(50), notnull: true}
+#    password  : {type: string(90), notnull: true}
+#    first_name: {type: string(255)}
+#    last_name: {type: string(255)}
+#    email : {type: string(255), notnull: true}
+#    role_id : { type: integer, notnull: true }
+#    status: { type: integer , default: 0 }
+#    otp : {type: string(6)}
+#    otp_upd_dt : {type: timestamp}
+#    last_login: { type: timestamp }
+#    phone_number: {type: string(50)}
+#    birthday: { type: timestamp}
+#    secret: {type: string(16)}
+#    token:  {type: string(500)}
+#  relations:
+#      Role: { onDelete: CASCADE, local: role_id, foreign: id, foreignAlias: Roles }
+
+DeviceInventory:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    device_name: { type: string(255)}
+    manufacturer: { type:string(255)}
+    product_name: { type:string(255)}
+    device_type: { type:string(255)}
+    registration_id: { type:string(255)}
+    enroll_status: { type: integer, default: 0 }
+    version: {type:string(45)}
+    organization: {type:string(250)}
+    location: {type:string(250)}
+    platform: { type: integer }
+    purchase_date: { type: timestamp}
+    warranty_end:  { type: timestamp}
+    user_id : { type: integer, notnull: true }
+    owner_name : { type: string(250) }
+    owner_email : { type: string(250) }
+    udid: {type: string(64)}
+    imei: {type: string(64)}
+    wifi_mac_address: {type: string(64)}
+    passcode: {type: string(32)}
+    model: {type: string(50)}
+    device_token: { type:string(255)}
+    unlock_token: { type:text}
+    push_magic: { type:string(64)}
+    hardware_id: {type: string(250)}
+    
+InventoryAttributeGroup:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    name: { type: string(255)}
+
+InventoryAttribute:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    name: { type: string(250),notnull: true }
+    slug: { type: string(250) }
+    inventory_group_id: { type: integer, notnull: true }
+  relations:
+    InventoryAttributeGroup: { onDelete: CASCADE, local: inventory_group_id, foreign: id, foreignAlias: InventoryAttributeGroups }
+
+InventoryInformation:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    device_id:  { type: integer, notnull: true }
+    value: {type: text}
+    inventory_group_id: { type: integer, notnull: true }
+  relations:
+    DeviceInventory: { onDelete: CASCADE, local: device_id, foreign: id, foreignAlias: DeviceInventories }
+    InventoryAttributeGroup: { onDelete: CASCADE, local: inventory_group_id, foreign: id, foreignAlias: InventoryAttributeGroups } 
+
+DeviceEvent:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    device_id: { type: integer, notnull: true}
+    model: {type:string(45)}
+    event_type: {type:string(45)}
+    event_name: {type:string(45)}
+    sent_by: { type: integer, notnull: true}
+    status: { type: integer , default: 0}
+    manage_event_flag: { type: integer , default: 1}
+    command_data: {type:string(255)}
+    command_uuid: {type:string(32)}
+    sender_email: {type:string(255)}
+    owner_name: {type:string(255)}
+    note: {type:string(255)}
+    request_type: {type: integer, notnull: true, default: 00}
+  relations:
+    DeviceInventory: { onDelete: CASCADE, local: device_id, foreign: id, foreignAlias: DeviceEventInventories }
+
+DeviceApplication:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    device_id:  { type: integer, notnull: true }
+    name: {type:string(250)}
+    version: {type:string(45)}
+    identifier: {type:string(200)}
+    size: {type:string(45)}
+  relations:
+    DeviceInventory: { onDelete: CASCADE, local: device_id, foreign: id, foreignAlias: DeviceApplicationInventories }
+    
+DeviceLocation:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    device_id:  { type: integer, notnull: true }
+    latitude:  { type: string(20),notnull: true}
+    longitude: { type: string(20),notnull: true}
+    address: {type: string(250)}
+  relations:
+    DeviceInventory: { onDelete: CASCADE, local: device_id, foreign: id, foreignAlias: DeviceLocationInventories }
+
+Template:
+  connection: mcenter
+  actAs: { Timestampable: ~ }
+  columns:
+    name: {type:string(250), notnull:true}
+    content: {type: text}
+    subject: {type: string(250)}
+    usage_system: {type: integer, default: 0}
+    tenant_id: {type: integer}
+    template_code: {type: integer, notnull: true}
+  indexes:
+    template_identity:
+      fields: [tenant_id, template_code, usage_system]
+      type: unique  
+Location:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    location: {type:string(250)}
+    organization: {type:string(250)}  
+
+Profile:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    profile_name: {type:string(250)}  
+    platform: { type: integer }
+    configuration_type: {type: integer, notnull:true}  
+    description: {type:string(250)}  
+
+ProfileAttributeGroup:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    name: {type:string(250)}  
+    
+ProfileAttribute:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    profile_attribute_name: { type: string(250),notnull: true }
+    profile_attribute_key: { type: string(250) }
+    profile_attribute_group_id: { type: integer, notnull: true }
+  relations:
+    ProfileAttributeGroup: { onDelete: CASCADE, local: profile_attribute_group_id, foreign: id, foreignAlias: ProfileAttributeGroups }
+
+ProfileInformation:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    profile_id:  { type: integer, notnull: true }
+    value: {type: text}
+    profile_attribute_group_id: { type: integer, notnull: true }
+  relations:
+    Profile: { onDelete: CASCADE, local: profile_id, foreign: id, foreignAlias: ProfileInventories }
+    ProfileAttributeGroup: { onDelete: CASCADE, local: profile_attribute_group_id, foreign: id, foreignAlias: ProfileAttributeGroups }
+
+DeviceProfile:
+  connection: mdmserver
+  actAs: { Timestampable: ~ }
+  columns:
+    device_id:  { type: integer, notnull: true }
+    profile_id: { type: integer, notnull: true }
+    profile_name: {type:string(250)}  
+    platform: { type: integer }
+    configuration_type: {type: integer, notnull:true}   
+  relations:
+    DeviceInventory: { onDelete: CASCADE, local: device_id, foreign: id, foreignAlias: DeviceProfiles }
+
+#SoftwareVersion:
+#    connection: mdmserver
+#    actAs: { Timestampable: ~ }
+#    columns:
+#        platform: { type: integer }
+#        software_version: {type:string(250)}
+
+DeviceLog:
+    connection: mdmserver
+    actAs: { Timestampable: ~ }
+    columns:
+        log_content: { type: text }
+        device_id: { type: integer, notnull: true }
+    relations:
+        DeviceInventory: { onDelete: CASCADE, local: device_id, foreign: id, foreignAlias: DeviceLogs }
+        
+Configuration:
+    connection: mcenter
+    columns:
+        config_key: {type: string(250), primary: true}
+        config_val: {type: text }
+
+EnrollWp:
+    connection: mdmserver
+    actAs: { Timestampable: ~ }
+    columns:
+        user_id : { type: integer, notnull: true }
+        hardware_id: {type: string(250)}
+        udid: {type: string(64)}
+        status: { type: integer , default: 0}
+        channeluri_mdm: { type:string(255)}
+        channeluri_app: { type:string(255)}
+    relations:
+        DeviceInventory: { onDelete: CASCADE, local: user_id, foreign: user_id, foreignAlias: EnrollWpInventory }    

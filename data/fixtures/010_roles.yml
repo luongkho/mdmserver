@@ -1,0 +1,9 @@
+#Role:
+#  user:
+#    role_name: User
+#  moderator:
+#    role_name: Moderator
+#  admin:
+#    role_name: Admin
+#  gold_member:
+#    role_name: Gold Member

@@ -1,0 +1,11 @@
+InventoryAttributeGroup:
+  devices:
+   name: Device
+  operation_network:
+   name: Operator Network
+  profiles:
+   name: Profiles
+  security:
+   name: Security
+  sim:
+   name: Sim

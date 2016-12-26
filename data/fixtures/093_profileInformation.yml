@@ -1,0 +1,15 @@
+ProfileInformation:
+
+    Item_1:
+        Profile: Android_profile_2
+        ProfileAttributeGroup: location
+        value: <?php echo(serialize(array('distance' => '100', 'interval' => '60'))) ?>
+#    Item2:
+#        Profile: IOS_profile_wifi_3
+#        ProfileAttributeGroup: wifi
+#        value: <?php echoln(serialize(array('wifi_ssid' => 'gcs', 'wifi_security_type' => 'WPA2', 'wifi_password' => 'gcsvn123'))) ?>
+#    Item3:
+#        Profile: IOS_profile_passcode_4
+#        ProfileAttributeGroup: passcode
+#        value: <?php echoln(serialize(array('pc_min_length' => '8', 'pc_age' => '30', 'pc_num_failed' => '5'))) ?>
+        

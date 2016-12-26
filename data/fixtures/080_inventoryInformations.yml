@@ -1,0 +1,28 @@
+InventoryInformation:
+<?php for ($i = 1; $i <= 10; $i++): ?>
+ ITEM_<?php echo $i ?>:
+  DeviceInventory: IOS_<?php echoln($i) ?>
+  InventoryAttributeGroup: devices
+  value: <?php echoln(serialize(array('storage_free_total' => '21.8 GB/28.7 GB','imei' => 'imei'.time().$i,'device_name' => 'Iphone 6','manufacturer' => 'Apple', 'product_name' => 'Iphone', 'software_version' => '8.0','bluetooth_mac_address'=>'40:30:05:21:ad:0d ','current_country'=>'Viet Nam','current_network'=>'Unknown (00) ','current_roaming_state'=>'US','data_roaming'=>'Disabled ','device_type'=>'IOS','do_not_disturb_device'=>'AAAAA','eas_identifier'=>'AAAAA','encryption_status'=>'AAAAA','hardware_encryption_capabilities'=>'sos','home_country'=>'Le Duan','home_network'=>'AAAAA','hotspot_enabled'=>'enable','iccd'=>'iccd','imei'=>'AAAAA','manufacturer'=>'AAAAA','operator_name'=>'ABCD','passcode_compliance'=>'123654789','passcode_set'=>'789654','phone_number'=>'AAAAA','serial_number'=>'56897426','software_version'=>'IOS','store_account_active'=>'ASDF','udid'=>'14dcb5153fb235561fb6f12b2f561b5f1bf152151bf ','wifi_mac_address'=>'30:90:045:61:ad:0d '))) ?>
+<?php endfor ?>
+
+<?php for ($i = 1; $i <= 10; $i++): ?>
+ ITEM2_<?php echo $i ?>:
+  DeviceInventory: IOS2_<?php echoln($i) ?>
+  InventoryAttributeGroup: devices
+  value: <?php echoln(serialize(array('storage_free_total' => '21.8 GB/28.7 GB','imei' => 'imei'.time().$i,'device_name' => 'Iphone 6','manufacturer' => 'Apple', 'product_name' => 'Iphone', 'software_version' => '8.0','bluetooth_mac_address'=>'40:30:05:21:ad:0d ','current_country'=>'Viet Nam','current_network'=>'Unknown (00) ','current_roaming_state'=>'US','data_roaming'=>'Disabled ','device_type'=>'IOS','do_not_disturb_device'=>'AAAAA','eas_identifier'=>'AAAAA','encryption_status'=>'AAAAA','hardware_encryption_capabilities'=>'sos','home_country'=>'Le Duan','home_network'=>'AAAAA','hotspot_enabled'=>'enable','iccd'=>'iccd','imei'=>'AAAAA','manufacturer'=>'AAAAA','operator_name'=>'ABCD','passcode_compliance'=>'123654789','passcode_set'=>'789654','phone_number'=>'AAAAA','serial_number'=>'56897426','software_version'=>'IOS','store_account_active'=>'ASDF','udid'=>'14dcb5153fb235561fb6f12b2f561b5f1bf152151bf ','wifi_mac_address'=>'80:30:05:21:ad:0d '))) ?>
+<?php endfor ?>
+
+<?php for ($i = 1; $i <= 10; $i++): ?>
+ ITEM3_<?php echo $i ?>:
+  DeviceInventory: ANDROID_<?php echoln($i) ?>
+  InventoryAttributeGroup: devices
+  value: <?php echoln(serialize(array('storage_free_total' => '21.8 GB/28.7 GB','imei' => 'imei'.time().$i,'device_name' => 'TABLET','manufacturer' => 'SAMSUNG', 'product_name' => 'Iphone', 'software_version' => '8.0','bluetooth_mac_address'=>'40:30:05:21:ad:0d ','current_country'=>'Viet Nam','current_network'=>'Unknown (00) ','current_roaming_state'=>'US','data_roaming'=>'Disabled ','device_type'=>'IOS','do_not_disturb_device'=>'AAAAA','eas_identifier'=>'AAAAA','encryption_status'=>'AAAAA','hardware_encryption_capabilities'=>'sos','home_country'=>'Le Duan','home_network'=>'AAAAA','hotspot_enabled'=>'enable','iccd'=>'iccd','imei'=>'AAAAA','manufacturer'=>'AAAAA','operator_name'=>'ABCD','passcode_compliance'=>'123654789','passcode_set'=>'789654','phone_number'=>'AAAAA','serial_number'=>'56897426','software_version'=>'IOS','store_account_active'=>'ASDF','udid'=>'14dcb5153fb235561fb6f12b2f561b5f1bf152151bf ','wifi_mac_address'=>'70:30:05:21:ad:0d '))) ?>
+<?php endfor ?>
+
+<?php for ($i = 1; $i <= 10; $i++): ?>
+ ITEM4_<?php echo $i ?>:
+  DeviceInventory: WP_<?php echoln($i) ?>
+  InventoryAttributeGroup: devices
+  value: <?php echoln(serialize(array('storage_free_total' => '21.8 GB/28.7 GB','imei' => 'imei'.time().$i,'device_name' => 'WINDOW_PHONE 8','manufacturer' => 'window phone', 'product_name' => 'Iphone', 'software_version' => '8.0','bluetooth_mac_address'=>'203 OIK','current_country'=>'Viet Nam','current_network'=>'Unknown (00) ','current_roaming_state'=>'US','data_roaming'=>'Disabled ','device_type'=>'IOS','do_not_disturb_device'=>'AAAAA','eas_identifier'=>'AAAAA','encryption_status'=>'AAAAA','hardware_encryption_capabilities'=>'sos','home_country'=>'Le Duan','home_network'=>'AAAAA','hotspot_enabled'=>'enable','iccd'=>'iccd','imei'=>'AAAAA','manufacturer'=>'AAAAA','operator_name'=>'ABCD','passcode_compliance'=>'123654789','passcode_set'=>'789654','phone_number'=>'AAAAA','serial_number'=>'56897426','software_version'=>'IOS','store_account_active'=>'ASDF','udid'=>'14dcb5153fb235561fb6f12b2f561b5f1bf152151bf ','wifi_mac_address'=>'100:30:05:21:ad:0d '))) ?>
+<?php endfor ?>

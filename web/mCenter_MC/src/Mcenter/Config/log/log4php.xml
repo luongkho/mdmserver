@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns="http://logging.apache.org/log4php/">
+    <appender name="mcenter" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%d %-5p [%c] (%t) %m%n" />
+        </layout>
+        <param name="file" value="../logs/mcenter-%s.log" />
+        <param name="datePattern" value="Y-m-d" />
+        <param name="append" value="true" />
+        <param name="threshold" value="DEBUG" />
+    </appender>
+    <root>
+        <level value="debug" />
+        <appender_ref ref="mcenter" />
+    </root>
+</configuration>

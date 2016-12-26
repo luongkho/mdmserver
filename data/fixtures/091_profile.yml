@@ -1,0 +1,13 @@
+Profile:
+<?php for ($i = 1; $i <= 10; $i++): ?>
+  Android_profile_<?php echo $i ?>:
+      platform: 1
+      configuration_type: 1
+#  IOS_profile_wifi_<?php echo $i ?>:
+#      platform: 2
+#      configuration_type: 2
+#  IOS_profile_passcode_<?php echo $i ?>:
+#      platform: 2
+#      configuration_type: 3
+<?php endfor; ?>
+   

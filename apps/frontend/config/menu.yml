@@ -1,0 +1,42 @@
+all:
+  left:
+    data:
+        0:
+          header: GENERAL
+          submenu:
+            0: 
+              name: dashboard
+              title: Dashboard
+            1: 
+              name: manage_templates
+              title: Manage Templates
+        1:
+          header: MOBILE MANAGEMENT
+          submenu:
+            0: 
+              name: device
+              title: Devices
+            1: 
+              name: profile
+              title: Configuration Profiles
+            2: 
+              name: events
+              title: Activity Log
+        2:
+          header: USER MANAGEMENT
+          submenu:
+            0: 
+              name: user_management
+              title: Users
+            1: 
+              name: location_management
+              title: Locations
+        3:
+          header: APP MANAGEMENT
+          submenu:
+            0: 
+              name: device_linkup
+              title: Device Linkup Version
+            1: 
+              name: enroll
+              title: Provision Device Linkup

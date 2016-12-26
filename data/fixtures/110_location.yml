@@ -1,0 +1,21 @@
+## Add location table
+---
+Location:
+    iWebGate1:
+        location:     Perth, Australia
+        organization: iWebgate
+    iWebGate2:
+        location:     Bethesda, MD
+        organization: iWebgate
+    iWebGate3:
+        location:     Baltimore, MD
+        organization: iWebgate
+    iWebGate4:
+        location:     London, United Kingdom
+        organization: iWebgate
+    Telstra1:
+        location:     Sydney, Australia
+        organization: Telstra
+    Telstra2:
+        location:     Melbourne, Australia
+        organization: Telstra

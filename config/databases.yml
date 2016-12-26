@@ -1,0 +1,14 @@
+all:
+  mdmserver:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'pgsql:dbname=mdmserver;host=localhost'
+      username: postgres
+      password: gcsvn123
+  mcenter:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'pgsql:dbname=mcenter;host=localhost'
+      username: postgres
+      password: gcsvn123
+

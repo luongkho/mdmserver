@@ -1,0 +1,185 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  platforms:
+      # use in list_all_device
+    data:
+      1: "Android"
+      2: "iOS"
+      3: "Windows Phone"
+      4: "OS X"
+      5: "Windows Universal"
+
+  platform_extensions:
+    data:
+      1: apk                    #for Android platform
+      2: ipa                    #for iOS platform
+      3: appxbundle             #for Windows Phone platform
+      4: app                    #for OS X platform
+      5: appxbundle             #for Windows Universal platform
+  
+  #Using convert from keyword to id
+  platform_keyword_id_mcenter:
+    data:
+      ANDROID: 1
+      IOS: 2
+      WINDOWSP: 3
+      MACOS: 4
+      WINDOWS: 5
+  
+  #using search in DataTable    
+  platform_keyword_name_mcenter:
+    data:
+      ANDROID: "Android"
+      IOS: "iOS"
+      WINDOWSP: "Windows Phone"
+      MACOS: "OS X"
+      WINDOWS: "Windows Universal"
+  
+  application_file_name:
+      data:
+        default: DeviceLinkup_MDM
+        structure: 
+          full: "/^[A-Za-z0-9_\-\.]+_v[0-9\.]+$/i"
+          name: "/^[A-Za-z0-9_\-\.]+_v/i"
+  
+  application_folder_upload:
+    dir: /application
+  
+  
+  statuses:
+    data:
+      1: "Ready"
+      2: "Waiting"
+      3: "Cancelled"
+  enroll_statuses:
+      #Use in get device_list
+    data:
+      0: "Enrolled"
+      1: "Unenrolled"
+      2: "Allow re-enroll"
+  user_statuses:
+    data:
+      1: "Active"
+      0: "Inactive"
+  mail:
+    from:
+      email: mcenteradmin@gmail.com
+      name: "iWebGate MDM-Server"
+  event_status:
+#   Use in show error events
+    data:
+      0: "Ready"
+      1: "Processing"
+      2: "Completed"
+      3: "Error"
+  event_name:
+    data:
+      EraseDevice: "Device Linkup Data Removal"
+      DeviceLock: "Lock device"
+      DeviceUnlock: "Reset passcode"
+      Unenroll: "Unenroll device"
+      InstallProfile: "Install Profile"
+      RemoveProfile: "Remove Profile"
+      WipeData: "Device Linkup Data Removal"
+      GetLogInformation: "Get Log Information"
+  template_usage:
+    data:
+      0: "Not Defined"
+      1: "mCenter"
+      2: "Device Linkup"
+      3: "MDM"
+  command_url:
+    data:
+      send: /mdm/command/send
+      proxy: 
+  enroll_app_url:
+    data:
+      1: /application/DeviceLinkup_MDM.apk 
+      2: /application/DeviceLinkup_MDM.mobileconfig
+      #Link download app for GCS
+      3: http://windowsphone.com/s?appid=ddeb1b88-9fa8-4e12-9831-b7f62547450a
+#      #Link download app for Haitech
+#      3: http://windowsphone.com/s?appid=ddeb1b88-9fa8-4e12-9831-b7f62547450a
+  configuration_type:
+    data:
+      3: "Location"
+      1: "iOS Wifi"
+      2: "iOS Passcode"
+  push_notification:
+    ios:
+      dir: /certificate/naml_cer.pem 
+    iosapp:
+      dir: /certificate/push_notification.pem
+      
+# Define which profile each platform can have, use in profile
+  profileByPlatform:
+      data:
+        1:
+          3: "Location"
+        2:
+          2: "iOS Passcode"
+          3: "Location"
+        3:
+          3: "Location"
+      
+#  Setting for Passcode Profile
+# Default value -1 use to reset select box in modal
+  passcode_setting:
+      data:
+        maxInactivity:
+            -1: "Never"
+            1: 1
+            2: 2
+            3: 3
+            4: 4
+            5: 5
+            10: 10
+            15: 15
+        minLength:
+            -1: "None"
+            min: 1
+            max: 16
+            step: 1
+        pinHistory:
+            -1: "None"
+            min: 1
+            max: 10
+            step: 1
+        minComplexChars:
+            -1: "None"
+            1: 1
+            2: 2
+            3: 3
+            4: 4
+        maxGracePeriod:
+            -1: "None"
+            0: "Immediately"
+            1: "1 minute"
+            5: "5 minutes"
+            15: "15 minutes"
+            60: "1 hour"
+            240: "4 hours"
+        maxFailedAttempts:
+            -1: "None"
+            min: 4
+            max: 10
+            step: 1
+#  End setting for Passcode Profile
+
+  email_template:
+    data:
+      1: "enroll_android"
+      2: "unlock_android"
+      3: "unlock_ios"
+      4: "enroll_wp"
+      5: "unlock_wp"
+      6: "enroll_ios"
+      
+  ignore_request:
+    data:
+      1: "login"
+      2: "signIn"
+      

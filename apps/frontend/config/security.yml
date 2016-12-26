@@ -1,0 +1,17 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure: false
+#read:
+#  is_secure:   false       # All users can request the read action
+
+#update:
+#  is_secure:   true        # The update action is only for authenticated users
+
+#delete:
+#  is_secure:   true        # Only for authenticated users
+#  credentials: admin       # With the admin credential
+
+#all:
+#  is_secure:  false        # false is the default value anyway
